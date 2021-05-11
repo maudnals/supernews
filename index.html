@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      async
+      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+    ></script>
+    <script
+      data-ad-client="ca-pub-8926730435424345"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <script>
+      // ensure that the googletag object is available
+      window.googletag = window.googletag || { cmd: [] };
+      window.googletag = window.googletag || { cmd: [] };
+      googletag.cmd.push(function () {
+        googletag
+          // define a slot with this path, size, and DOM id
+          .defineSlot(
+            // 6355419 = network code
+            // Travel/Europe/France = parent ad unit code
+            // Paris = actual ad unit code
+            '/6355419/Travel/Europe/France/Paris',
+            [200, 200],
+            'banner-ad'
+          )
+          // add a service to this new slot
+          // specifically the publisher ads service, that's used to fetch and show ads from your Google Ad Manager account.
+          .addService(googletag.pubads());
+        // enable all GPT services that have been defined for ad slots on the page
+        googletag.enableServices();
+      });
+    </script>
+  </head>
+  <body>
+    Ad:
+    <div id="banner-ad" style="width: 200px; height: 200px"></div>
+    <script>
+      googletag.cmd.push(function () {
+        googletag.display('banner-ad');
+      });
+    </script>
+  </body>
+</html>
